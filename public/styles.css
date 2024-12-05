@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+    /* Top Navigation */
+.top-nav {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-small {
+    padding: 5px 15px;
+    background: #00FFFF;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #0073e6;
+    transition: 0.3s;
+  }
+  
+  .btn-small:hover {
+    background: #005bb5;
+    color: #fff;
+  }
+  
+  /* Header */
+  .header {
+    background: #01257D;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .header p {
+    color : #00FFFF;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .header .btn {
+    padding: 10px 20px;
+    background: #00FFFF;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .header .btn:hover {
+    background: #005bb5;
+    color: #fff;
+  }
+  
+  /* Features */
+  .features {
+    background: #f4f4f4;
+    padding: 50px 20px;
+  }
+  
+  .features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature h3 {
+    margin-bottom: 15px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    padding: 50px 20px;
+  }
+  
+  .testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial h4 {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Call to Action */
+  .cta {
+    background: #01257D;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .cta h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cta .btn {
+    padding: 10px 20px;
+    background: #00FFFF;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .cta .btn:hover {
+    background: #005bb5;
+    color: #fff;
+  }
+
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Sign-In Container */
+  .signin-container {
+    color: #00FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  .signin-card {
+    background: #01257D;
+    margin: 100px; 
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .signin-card h1 {
+    margin-bottom: 10px;
+  }
+  
+  .signin-card p {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+    
+  /* Forms */
+  .signin-form {
+    display: block;
+    text-align: left;
+  }
+  
+  
+  .signin-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signin-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #00FFFF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .signin-form .btn:hover {
+    color: #fff;
+    background: #005bb5;
+  }
+  

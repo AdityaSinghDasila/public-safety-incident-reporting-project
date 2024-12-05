@@ -3,25 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="../public/css/style.css">
+  <title>Public Safety Incident Reporting</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <nav class="top-nav">
+        <a href="./resident-signin.html" class="btn-small">Resident Sign In</a>
+        <a href="./admin-signin.html" class="btn-small">Administrator Sign In</a>
+      </nav>
+      <hr>
+      <h1>Report, Resolve, Improve</h1>
+      <p>Your community's safety starts with your voice.</p>
+      <a href="#report" class="btn">Report an Issue</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Easy Reporting</h3>
+          <p>Report local issues like potholes, broken streetlights, or other safety concerns in just a few clicks.</p>
+        </div>
+        <div class="feature">
+          <h3>Real-Time Updates</h3>
+          <p>Track the status of your reports and get notified about progress.</p>
+        </div>
+        <div class="feature">
+          <h3>Community Impact</h3>
+          <p>Collaborate with local authorities to make your neighborhood safer and better.</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What People Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>"A fantastic way to report issues and stay informed about community developments!"</p>
+          <h4>- Jane Doe</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Quick, easy, and effective! My report was resolved in no time."</p>
+          <h4>- John Smith</h4>
+        </div>
       </div>
-      <button type="submit">Login</button>
-      <p>Don't have an account? <a href="/register.html">Register here</a></p>
-    </form>
-  </div>
-  <script src="../public/js/script.js"></script>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <h2>Join Us in Making a Difference</h2>
+      <a href="#report" class="btn">Start Reporting Now</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Public Safety Incident Reporting. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
