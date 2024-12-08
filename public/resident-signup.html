@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Sign-Up</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body style="background: #00FFFF;">
+  <div class="signup-container">
+    <div class="signup-card">
+      <h1>Create a New Account</h1>
+      <form action="/submit-signup" method="POST" class="signup-form">
+        
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <!-- First Name -->
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required>
+        
+        <!-- Last Name -->
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required>
+        
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirmPassword" placeholder="Re-enter your password" required>
+        
+        <!-- Sign-Up Button -->
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      
+      <!-- Sign-In Link -->
+      <p class="signin-link">Already have an account? <a href="resident-signin.html">Sign In</a></p>
+    </div>
+  </div>
+</body>
+</html>

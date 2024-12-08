@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Incident</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body style="background: #00FFFF;">
+  <div class="report-container">
+    <div class="report-card">
+      <h1>Report an Incident</h1>
+      <form action="/submit-report" method="POST" enctype="multipart/form-data" class="report-form">
+        
+        <!-- Upload Image -->
+        <label for="image-upload">Upload an Image</label>
+        <input type="file" id="image-upload" name="image" accept="image/*" required>
+        
+        <!-- Report Description -->
+        <label for="report-description">Write Your Report</label>
+        <textarea id="report-description" name="description" rows="5" placeholder="Describe the incident..."></textarea>
+        
+        <!-- Location -->
+        <label for="location-dropdown">Select Location</label>
+        <select id="location-dropdown" name="location" required>
+          <option value="clementown">Clementown</option>
+        </select>
+        
+        <!-- Submit -->
+        <button type="submit" class="btn">Submit Report</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
