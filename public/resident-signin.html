@@ -13,12 +13,12 @@
       
 
       <!-- Resident Sign-In Form -->
-      <form id="resident-form" class="signin-form">
-        <label for="resident-email">Email</label>
-        <input type="email" id="resident-email" placeholder="Enter your email" required>
+      <form id="resident-form" class="signin-form" action="/user_signin" method="POST">
+        <label for="resident-phone-number">Email</label>
+        <input type="tel" id="resident-phone-number" placeholder="Enter Phone number" name="user_phone" pattern="[0-9]{10}"  required>
         
         <label for="resident-password">Password</label>
-        <input type="password" id="resident-password" placeholder="Enter your password" required>
+        <input type="password" id="resident-password" placeholder="Enter your password" name="user_password" required>
         
         <button type="submit" class="btn">Sign In as Resident</button>
       </form>
