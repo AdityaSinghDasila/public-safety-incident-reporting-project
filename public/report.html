@@ -19,6 +19,8 @@
         <!-- Report Description -->
         <label for="report-description">Write Your Report</label>
         <textarea id="report-description" name="description" rows="5" placeholder="Describe the incident..."></textarea>
+
+        <!--time and date the database stores automatically as timestamp-->
         
         <!-- Location -->
         <label for="location-dropdown">Select Location</label>
@@ -34,8 +36,9 @@
           <option value="Disaster">Natural Disaster</option>
         </select>
 
+
         <label for="user_phone">Phone number</label>
-        <input type="tel" id="user_phone" name="user_phone" pattern="[0-9]{10}" required>
+        <input type="tel" id="user_phone" name="user_phone" pattern="[0-9]{10}" placeholder ="10 digit number" required>
 
         <!-- Submit -->
         <button type="submit" class="btn">Submit Report</button>
