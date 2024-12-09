@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
     console.log("sent the landing page :");
 });
 app.get("/user_register",(req,res)=>{
-    res.sendFile(__dirname+"/public/register.html"); //work pending on this page
+    res.sendFile(__dirname+"/public/resident-register.html"); //work pending on this page
     console.log("A user was sent the register page ");
 });
 
@@ -34,6 +34,10 @@ app.get("/admin_signin_page",(req,res)=>{
 app.post("/user_signin",(req,res)=>{
     console.log("phone number recieved : "+ req.body.user_phone);
     console.log("password recieved : "+ req.body.user_password);
+});
+
+app.get("/user_reports",(req,res)=>{
+    res.sendFile(__dirname + "/public/report.html");
 });
 
 
