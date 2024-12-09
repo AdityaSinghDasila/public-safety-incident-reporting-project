@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body style="background-color: #00FFFF;">
+  <div class="signin-container">
+    <div class="signin-card">
+      <h1>Sign In</h1>
+      
+
+      <!-- Resident Sign-In Form -->
+      <form id="resident-form" class="signin-form" action="/user_signin" method="POST">
+        <label for="resident-phone-number">Email</label>
+        <input type="tel" id="resident-phone-number" placeholder="Enter Phone number" name="user_phone" pattern="[0-9]{10}"  required>
+        
+        <label for="resident-password">Password</label>
+        <input type="password" id="resident-password" placeholder="Enter your password" name="user_password" required>
+        
+        <button type="submit" class="btn">Sign In as Resident</button>
+
+        <!-- Sign-In Link -->
+        <p class="signin-link">Don't have an account? <a href="/user_register">Create account</a></p>
+      </form>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
