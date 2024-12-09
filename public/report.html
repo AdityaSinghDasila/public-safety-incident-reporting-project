@@ -14,7 +14,7 @@
         
         <!-- Upload Image -->
         <label for="image-upload">Upload an Image</label>
-        <input type="file" id="image-upload" name="image" accept="image/*" required>
+        <input type="file" id="image-upload" name="image" accept="image/*" > <!--required hata rakha hai for now, aur sql table mai media ka default url N/A kr dunga-->
         
         <!-- Report Description -->
         <label for="report-description">Write Your Report</label>
@@ -33,7 +33,10 @@
           <option value="Municipal">Municipal Department</option>
           <option value="Disaster">Natural Disaster</option>
         </select>
-        
+
+        <label for="user_phone">Phone number</label>
+        <input type="tel" id="user_phone" name="user_phone" pattern="[0-9]{10}" required>
+
         <!-- Submit -->
         <button type="submit" class="btn">Submit Report</button>
       </form>
